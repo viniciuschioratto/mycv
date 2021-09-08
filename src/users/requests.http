@@ -3,8 +3,17 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "test@email.com",
-    "password": "123test"
+    "email": "test1234@email.com",
+    "password": "123test1234"
+}
+
+### Signin User
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test1234@email.com",
+    "password": "123test1234"
 }
 
 ### Find user with ID
@@ -23,3 +32,9 @@ Content-Type: application/json
 {
     "email": "abc@test.com"
 }
+
+### Get the currently signed user
+GET http://localhost:3000/auth/whoami
+
+### Sign out
+POST http://localhost:3000/auth/signout
